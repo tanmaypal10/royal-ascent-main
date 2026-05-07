@@ -16,12 +16,11 @@ This is the official website for Royal College of Engineering, showcasing:
 ## 🛠️ Technology Stack
 
 - **Frontend Framework**: React 19 with TypeScript
-- **Meta Framework**: TanStack Start (SSR)
-- **Routing**: TanStack Router
+- **Routing**: React Router DOM
 - **Styling**: Tailwind CSS v4
 - **UI Components**: Radix UI + shadcn/ui
 - **Build Tool**: Vite
-- **Deployment**: Cloudflare Workers
+- **Deployment**: Vercel
 
 ## 📁 Project Structure
 
@@ -97,9 +96,20 @@ royal-ascent-main/
 npm run build
 ```
 
-### Cloudflare Workers Deployment
+### Vercel Deployment
 
-The project is configured to deploy on Cloudflare Workers. Use the `wrangler.jsonc` configuration file for deployment settings.
+The project is configured to deploy on Vercel. Use the `vercel.json` configuration file for deployment settings.
+
+To deploy:
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Vercel will automatically build and deploy your app
+
+Or deploy manually:
+```bash
+npm install -g vercel
+vercel --prod
+```
 
 ## 🤝 Contributing
 
