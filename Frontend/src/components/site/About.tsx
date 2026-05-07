@@ -15,11 +15,11 @@ export function About() {
     <section id="about" className="relative bg-background py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <div className="text-xs uppercase tracking-[0.35em] text-[var(--gold-deep)] dark:text-[var(--gold)]">About the College</div>
-          <h2 className="mt-3 font-serif text-4xl sm:text-5xl font-bold text-[var(--royal)] dark:text-foreground">
-            A Legacy of <span className="text-gold-gradient">Engineering Excellence</span>
+          <div className="text-[10px] uppercase tracking-[0.4em] text-[var(--gold-deep)] dark:text-[var(--gold)] font-medium">About the College</div>
+          <h2 className="mt-4 font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-[var(--royal)] dark:text-foreground tracking-tight">
+            A Legacy of <span className="text-gold-gradient italic">Engineering Excellence</span>
           </h2>
-          <div className="gold-divider mx-auto mt-6 w-32" />
+          <div className="gold-divider mx-auto mt-8 w-40" />
         </Reveal>
 
         <div className="mt-16 grid items-center gap-12 lg:grid-cols-2">

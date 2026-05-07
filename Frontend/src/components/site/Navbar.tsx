@@ -36,28 +36,31 @@ export function Navbar() {
 
   return (
     <motion.header
-      initial={{ y: -40, opacity: 0 }}
+      initial={{ y: -60, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.7, ease: "easeOut" }}
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        scrolled ? "glass-dark shadow-royal" : "bg-transparent"
+      transition={{ duration: 0.8, ease: [0.2, 0.8, 0.2, 1] }}
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-700 ${
+        scrolled ? "glass-dark py-3" : "bg-transparent py-5"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
-        <a href="#home" className="flex items-center gap-3">
-          <img src={crest} alt="Royal College Crest" width={44} height={44} className="drop-shadow-[0_0_12px_rgba(212,175,55,0.45)]" />
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-8">
+        <a href="#home" className="flex items-center gap-4 group">
+          <div className="relative">
+            <img src={crest} alt="Royal College Crest" width={48} height={48} className="drop-shadow-[0_0_15px_rgba(212,175,55,0.4)] transition-transform duration-500 group-hover:scale-110" />
+            <div className="absolute inset-0 rounded-full bg-[var(--gold)]/10 blur-xl scale-150 opacity-0 group-hover:opacity-100 transition-opacity" />
+          </div>
           <div className="leading-tight">
-            <div className="font-serif text-base sm:text-lg font-semibold text-gold-gradient">Royal College</div>
-            <div className="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-white/70">of Engineering</div>
+            <div className="font-serif text-lg sm:text-xl font-bold tracking-tight text-gold-gradient">Royal College</div>
+            <div className="text-[10px] sm:text-xs uppercase tracking-[0.35em] text-white/60 font-light">of Engineering</div>
           </div>
         </a>
 
-        <nav className="hidden lg:flex items-center gap-1">
+        <nav className="hidden lg:flex items-center gap-2">
           {navItems.map((item) => (
             <div key={item.label} className="group relative">
               <a
                 href={item.href}
-                className="relative inline-flex items-center gap-1 px-4 py-2 text-sm text-white/85 hover:text-white transition-colors"
+                className="relative inline-flex items-center gap-1.5 px-5 py-2 text-[13px] font-medium tracking-wide text-white/80 hover:text-white transition-colors"
               >
                 {item.label}
                 {item.children && <ChevronDown className="size-3.5 opacity-60" />}
