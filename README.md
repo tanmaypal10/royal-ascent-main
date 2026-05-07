@@ -54,7 +54,7 @@ royal-ascent-main/
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd royal-ascent-main/Frontend
+   cd royal-ascent-main
    ```
 
 2. **Install dependencies**
@@ -74,17 +74,16 @@ royal-ascent-main/
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
-- `npm run build:dev` - Build in development mode
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
-- `npm run format` - Format code with Prettier
+- `npm run install` - Install dependencies
+
+(Additional scripts available in `Frontend/package.json`)
 
 ## 🎨 Features
 
 - **Responsive Design**: Mobile-first approach with Tailwind CSS
 - **Modern UI**: Beautiful components with Radix UI and shadcn/ui
 - **SEO Optimized**: Proper meta tags and semantic HTML
-- **Fast Performance**: SSR with TanStack Start and optimized builds
+- **Fast Performance**: Optimized builds with Vite and React Router
 - **Accessibility**: WCAG compliant components
 - **Type Safety**: Full TypeScript implementation
 

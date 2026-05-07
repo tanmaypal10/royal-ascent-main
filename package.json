@@ -1,0 +1,12 @@
+{
+  "name": "royal-ascent-main",
+  "private": true,
+  "scripts": {
+    "build": "cd Frontend && npm run build",
+    "dev": "cd Frontend && npm run dev",
+    "install": "cd Frontend && npm install"
+  },
+  "devDependencies": {
+    "vercel": "^latest"
+  }
+}
